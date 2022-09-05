@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Peer To Care - La paire aidance au service des maladies Chroniques</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link 
+      rel="stylesheet" 
+      href="https://use.typekit.net/gdw6dhw.css"
+    />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/lineicons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/5d576a2555.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <!-- Spinner Start -->
+    <div
+      id="spinner"
+      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+    >
+      <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+    <!-- Navbar Start -->
+    <nav
+      class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5"
+    >
+      <a href="index.html" class="navbar-brand d-flex align-items-center">
+        <h1 class="m-0">
+          <img
+            class="img-fluid me-3"
+            src="img/icon/icon-primary.png"
+            alt=""
+          />Peer
+        </h1>
+        <h1 class="m-1">
+          To
+        </h1>
+        <h1 class="m-2">
+          Care
+        </h1>
+      </a>
+      <button
+        type="button"
+        class="navbar-toggler"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarCollapse"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul id="nav" class="navbar-nav ms-auto">
+          <li class="nav-item"> 
+            <a id="btNavHome" href="#home" class="page-scroll">Accueil</a> 
+          </li>
+          <li class="nav-item"> 
+            <a id="btNavfeatures" href="#features" class="page-scroll">Nos points forts</a> 
+          </li>
+          <li class="nav-item">
+            <a id="btNavAbout" href="#about" class="page-scroll">A propos</a>
+          </li>
+          <li class="nav-item">
+            <a id="btNavAvis" href="#why" class="page-scroll">Avis</a>
+          </li>
+          <li class="nav-item">
+            <a id="btNavPricing" href="#pricing" class="page-scroll">Prix</a>
+          </li>
+          <li class="nav-item">
+          <a id="btNavContact" href="#contact" class="page-scroll">Nous contactez</a>
+          </li>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Home-section Start -->
+    <section id="home" class="hero-section">
+      <div class="container-fluid p-0 mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="w-100" src="img/carousel-1.jpg" alt="Image" />
+              <div class="carousel-caption">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-12 col-lg-6">
+                      <h1 class="display-3 text-dark mb-4 animated slideInDown">
+                        Une communauté à votre écoute qui vous soutient au quotidien
+                      </h1>
+                      <p class="fs-5 text-body mb-5">
+                        Peer to care vous accompagne pour trouvez vos pairs-aidants mais vous accompagne également au quotidien
+                      </p>
+                      <a href="" class="btn btn-primary py-3 px-5"
+                        >Découvrir</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="w-100" src="img/carousel-2.jpg" alt="Image" />
+              <div class="carousel-caption">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-12 col-lg-6">
+                      <h1 class="display-3 text-dark mb-4 animated slideInDown">
+                        Trouver le pair-aidant qui vous accompagnera dans votre maladie chronique ou orpheline
+                      </h1>
+                      <p class="fs-5 text-body mb-5">
+                        Venez à la rencontre de notre communauté composée de malades qui sauront vous orienter vers le spécialiste dont vous avez besoin !
+                      </p>
+                      <a href="" class="btn btn-primary py-3 px-5"
+                        >Découvrir</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#header-carousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#header-carousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- Home-section End -->
+
+    <!-- Features-section Start -->
+    <section id="features" class="feature-section pt-120">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-8 col-sm-10">
+              <div class="single-feature1">
+                <div class="icon">
+                  <!-- <i class="lni lni-search-alt"></i> -->
+                  <i class="lni lni-keyword-research"></i>
+                </div>
+                <div class="content-feature1">
+                  <h3>La mise en relation avec des praticiens-experts</h3>
+                  <p>
+                    Entrez en relation avec des praticiens qui sauront vous accompagner dans le traitement de votre maladie grâce à leurs expériences.
+                  </p>
+                  <a href="" class="align-self-start btn btn-secondary py-3 px-5">En savoir plus</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-8 col-sm-10">
+              <div class="single-feature2">
+                <div class="icon">
+                  <i class="lni lni-layout"></i>
+                </div>
+                <div class="content-feature2">
+                  <h3>Accédez aux conseils d’autres malades</h3>
+                  <p>
+                    Grâce à la communauté de Peer To Care, profitez d'astuces d'autres malades pour mieux vivre au quotidien votre maladie.
+                  </p>
+                  <a href="" class="align-self-start btn btn-secondary py-3 px-5">En savoir plus</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-8 col-sm-10">
+              <div class="single-feature3">
+                <div class="icon">
+                  <i class="lni lni-coffee-cup"></i>
+                </div>
+                <div class="content-feature3">
+                  <h3> Partagez vos avis sur les spécialistes</h3>
+                  <p>
+                    Parce que les malades de maladies orphelines sont peu nombreux, le moindre retour d’expérience compte beaucoup.
+                  </p>
+                  <a href="" class="align-self-start btn btn-secondary py-3 px-5">En savoir plus</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- Features-section End -->
+
+    <!-- About-section Start -->
+    <section id="about" class="about-section pt-150">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-xl-6 col-lg-6">
+            <div class="about-img">
+              <img src="/img/hero/medicine.svg" alt="" style="max-width: 90%;" />
+              <img
+                src="/img/about/about-left-shape.svg"
+                alt=""
+                class="shape shape-1"
+              />
+              <!-- <img
+                src="/img/about/left-dots.svg"
+                alt=""
+                class="shape shape-2"
+              /> -->
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6">
+            <div class="about-content">
+              <div class="section-title mb-30">
+                <h2 class="mb-25 wow fadeInUp" data-wow-delay=".2s">
+                  Fini l'errance médicale avec Peer To Care
+                </h2>
+                <p class="wow fadeInUp" data-wow-delay=".4s">
+                  Et si, Peer To Care vous permettait de venir à la rencontre de nos professionnelles de santé. Gagnez du temps grâce à notre fonctionnalité de recherche basée 
+                  sur votre pathologie et vos critères.
+                </p>
+              </div>
+              <a href="" class="align-self-start btn btn-secondary py-3 px-5">Trouver mon praticien</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About-section End -->
+
+    <!--  About-2-section Start -->
+    <section id="about" class="about-section pt-150">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-xl-6 col-lg-6">
+            <div class="about-content" style="max-width: 90%;">
+              <div class="section-title mb-30">
+                <h2 class="mb-25 wow fadeInUp" data-wow-delay=".2s">
+                  Rejoindre une communauté qui vous comprend
+                </h2>
+                <p class="wow fadeInUp" data-wow-delay=".4s">
+                  Trouver un expert, parler à une communauté de malades c’est trouver une solution pour vous soigner, vous orienter et donc vous aider à mieux vivre la maladie. 
+                </p>
+              </div>
+              <ul>
+                <li>Une communauté de 50 000 malades</li>
+                <li>3 000 praticiens référencés</li>
+                <li>+1000 recommandations</li>
+              </ul>
+              <a href="" class="align-self-start btn btn-secondary py-3 px-5">Je rejoins la communauté</a>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 order-first order-lg-last">
+            <div class="about-img-2">
+              <img src="/img/about/undraw_community_re_cyrm.svg" alt="" style="max-width: 85%;"  />
+              <img
+                src="/img/about/about-right-shape.svg"
+                alt=""
+                class="shape shape-1"
+              />
+              <!-- <img
+                src="assets/img/about/right-dots.svg"
+                alt=""
+                class="shape shape-2"
+              /> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+    </section>
+    <!-- About-2-section End -->
+    <!-- ======== feature-section start ======== -->
+    <section id="why" class="feature-extended-section pt-100">
+      <div class="feature-extended-wrapper">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-xxl-5 col-xl-6 col-lg-8 col-md-9">
+              <div class="section-title text-center mb-60">
+                <h2 class="mb-25 wow fadeInUp" data-wow-delay=".2s">
+                 Notre solution a changé leur vie
+                </h2>
+                <p class="wow fadeInUp" data-wow-delay=".4s">
+                  La communauté Peer To Care c'est des milliers de personnes partageant leur expériences et conseils pour continuer d'améliorer le quotidien de millions de personnes
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="row">
+            <div class="col-lg-4 col-md-6">
+              <div class="single-feature-extended">
+                <div class="icon">
+                  <i class="lni lni-display"></i>
+                </div>
+                <div class="content">
+                  <h3>SaaS Focused</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                    diam nonumy eirmod tempor invidunt ut labore
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="single-feature-extended">
+                <div class="icon">
+                  <i class="lni lni-leaf"></i>
+                </div>
+                <div class="content">
+                  <h3>Awesome Design</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                    diam nonumy eirmod tempor invidunt ut labore
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="single-feature-extended">
+                <div class="icon">
+                  <i class="lni lni-grid-alt"></i>
+                </div>
+                <div class="content">
+                  <h3>Ready to Use</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                    diam nonumy eirmod tempor invidunt ut labore
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="single-feature-extended">
+                <div class="icon">
+                  <i class="lni lni-javascript"></i>
+                </div>
+                <div class="content">
+                  <h3>Vanilla JS</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                    diam nonumy eirmod tempor invidunt ut labore
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="single-feature-extended">
+                <div class="icon">
+                  <i class="lni lni-layers"></i>
+                </div>
+                <div class="content">
+                  <h3>Essential Sections</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                    diam nonumy eirmod tempor invidunt ut labore
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="single-feature-extended">
+                <div class="icon">
+                  <i class="lni lni-rocket"></i>
+                </div>
+                <div class="content">
+                  <h3>Highly Optimized</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                    diam nonumy eirmod tempor invidunt ut labore
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div> -->
+          <!--testimonial-->
+          <div class="container mt-5 mb-5">
+    
+            <div class="row g-2">
+                <div class="col-md-4">
+                    <div class="card p-3 text-center px-4">
+                        
+                        <div class="user-image">
+                            
+                    <img src="/img/testimonial/testi1.png" style="margin-bottom: 15px;" class="rounded-circle" width="80"
+                            >
+                            
+                        </div>
+                        
+                        <div class="user-content">
+                            
+                            <h5 class="mb-0">Coralie</h5>
+                            <span>Coiffeuse à Toulon</span>
+                            <p>"Grâce à Peer To Care j’ai trouvé un expert qui m’accompagne au quotidien pour surmonter ma maladie de Crohn."</p>
+                            
+                        </div>
+                        
+                        <div class="ratings">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    
+                    <div class="card p-3 text-center px-4">
+                        
+                        <div class="user-image">
+                            
+                    <img src="/img/testimonial/testi2.png" style="margin-bottom: 15px;" class="rounded-circle" width="80"
+                            >
+                            
+                        </div>
+                        
+                        <div class="user-content">
+                            
+                            <h5 class="mb-0">Julie</h5>
+                            <span>Restauratrice à Nice</span>
+                            <p>"Merci à Peer To Care et au docteur Lafusse de Nice, professionnelle de haut niveau.. Bravo."</p>
+                            
+                        </div>
+                        
+                        <div class="ratings">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="col-md-4">
+                    
+                    <div class="card p-3 text-center px-4">
+                        
+                        <div class="user-image">
+                            
+                          <img src="/img/testimonial/testi3.png" style="margin-bottom: 15px;" class="rounded-circle" width="80"
+                            >
+                            
+                        </div>
+                        
+                        <div class="user-content">
+                            
+                            <h5 class="mb-0">Marc</h5>
+                            <span>Formateur à Montreuil</span>
+                            <p>"Remerciements au Dr Shanoune urologue pour son accompagnement depuis 6 mois et son attention."</p>
+                            
+                        </div>
+                        
+                        <div class="ratings">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                
+                
+            </div>
+            
+          </div>
+          <!-- section testimonial end-->
+        </div>
+      </div>
+    </section>
+    <!-- ======== feature-section end ======== -->
+
+    <!-- section pricing Start -->
+    <section id="pricing" class="pricing py-5">
+      <div class="container">
+        <div class="row row-pricing">
+          <!-- Free Tier -->
+          <div class="col-lg-4">
+            
+            <div class="card-pricing mb-5 mb-lg-0">
+              <div class="card-body">
+                <h5 class="card-title text-muted text-uppercase text-center">Gratuit</h5>
+                <h6 class="card-price text-center">€0<span class="period">/an</span></h6>
+                <hr>
+                <ul class="fa-ul">
+                  <li><span class="fa-li"><i class="fas fa-check"></i>
+                  <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Accés à l'outil de monitoring "Travis"</li>
+                  <!-- <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Accés aux spécialistes qui vous correspondent</li> -->
+                  <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Accés à la communauté</li>
+                  <!-- <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Unlimited
+                    Private Projects</li>
+                  <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Dedicated
+                    Phone Support</li>
+                  <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Free Subdomain
+                  </li> -->
+                  <!-- <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Monthly Status
+                    Reports</li> -->
+                </ul>
+                <div class="d-grid margin-btn">
+                  <a id="btnPricing1" href="#" class="btn btn-primary text-uppercase">Trouver mon expert</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Plus Tier -->
+          <div class="col-lg-4 position-relative">
+            <div class="bandeau">30 jours d'éssais gratuit</div>
+            <div class="card-pricing mb-5 mb-lg-0">
+              <div class="card-body">
+                <h5 class="card-title text-muted text-uppercase text-center">Plus</h5>
+                <h6 class="card-price text-center">€19.99<span class="period">/an</span></h6>
+                <hr>
+                <ul class="fa-ul">
+                  <li><span class="fa-li"><i class="fas fa-check"></i></span>Mise en relation avec un Expert</li>
+                  <li><span class="fa-li"><i class="fas fa-check"></i></span>Accédez aux conseils d’autres patients</li>
+                  <!-- <li><span class="fa-li"><i class="fas fa-check"></i></span>Accés aux spécialistes qui vous correspondent</li> -->
+                  <li><span class="fa-li"><i class="fas fa-check"></i></span>Accés à la communauté</li>
+                  <li><span class="fa-li"><i class="fas fa-check"></i></span>Accés à l'outil de monitoring "Travis"</li>
+                  <!-- <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Private Projects</li>
+                  <li><span class="fa-li"><i class="fas fa-check"></i></span>Dedicated Phone Support</li>
+                  <li><span class="fa-li"><i class="fas fa-check"></i></span>Free Subdomain</li> -->
+                  <!-- <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Monthly Status
+                    Reports</li> -->
+                </ul>
+                <div class="d-grid margin-btn">
+                  <a id="btnPricing2" href="#" class="btn btn-primary text-uppercase">Profiter de l'offre</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Pro Tier -->
+          <!-- <div class="col-lg-4 position-relative">
+            <div class="bandeau">30 jours d'éssais gratuit</div>
+            <div class="card-pricing">
+              <div class="card-body">
+                <h5 class="card-title text-muted text-uppercase text-center">Pro</h5>
+                <h6 class="card-price text-center">€49<span class="period">/month</span></h6>
+                <hr>
+                <ul class="fa-ul">
+                  <li><span class="fa-li"><i class="fas fa-check"></i></span><strong>Unlimited Users</strong>
+                  </li>
+                  <li><span class="fa-li"><i class="fas fa-check"></i></span>150GB Storage</li>
+                  <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Public Projects</li>
+                  <li><span class="fa-li"><i class="fas fa-check"></i></span>Community Access</li>
+                  <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Private Projects</li>
+                  <li><span class="fa-li"><i class="fas fa-check"></i></span>Dedicated Phone Support</li>
+                  <li><span class="fa-li"><i class="fas fa-check"></i></span><strong>Unlimited</strong> Free
+                    Subdomains</li>
+                  <li><span class="fa-li"><i class="fas fa-check"></i></span>Monthly Status Reports</li>
+                </ul>
+                <div class="d-grid margin-btn">
+                  <a id="btnPricing3" href="#" class="btn btn-primary text-uppercase">Button</a>
+                </div>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </section> 
+    <!-- section princing End -->
+
+    <!-- Appointment Start -->
+    <section id="contact" class="subscribe-section pt-120">
+      <div
+      class="container-fluid appointment my-5 py-5 wow fadeIn"
+      data-wow-delay="0.1s"
+    >
+      <div class="container py-5">
+        <div class="row g-5">
+          <div class="col-lg-6 wow fadeIn" data-wow-delay="0.3s">
+            <h1 class="display-6 text-white mb-5">
+             Contactez nous !
+            </h1>
+            <p class="text-white mb-5">
+              Peer To Care, votre solution à l'errance médicale notre objectif est de vous apporter tous les éléments nécessaires au suivi de votre maladie. Nous vous proposons également de vous mettre en relation avec des experts certifiés par notre communauté. N'hésitez pas à nous poser vos questions à bientôt sur Peer To Care ! 
+            </p>
+          </div>
+          <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+            <div class="bg-white rounded p-5">
+              <form>
+                <div class="row g-3">
+                  <div class="col-sm-6">
+                    <div class="form-floating">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="gname"
+                        placeholder="Gurdian Name"
+                      />
+                      <label for="gname">Nom</label>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-floating">
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="gmail"
+                        placeholder="Gurdian Email"
+                      />
+                      <label for="gmail">Email</label>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-floating">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="cname"
+                        placeholder="Child Name"
+                      />
+                      <label for="cname">Téléphone</label>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-floating">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="cage"
+                        placeholder="Child Age"
+                      />
+                      <label for="cage">Votre pathologie</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-floating">
+                      <textarea
+                        class="form-control"
+                        placeholder="Leave a message here"
+                        id="message"
+                        style="height: 80px"
+                      ></textarea>
+                      <label for="message">Message</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <button class="btn btn-primary py-3 px-5" type="submit">
+                      Envoyer
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    <!-- Appointment End -->
+
+    <!-- Footer Start -->
+    <div
+      class="container-fluid bg-dark footer mt-5 pt-5 wow fadeIn"
+      data-wow-delay="0.1s"
+    >
+      <div class="container py-5">
+        <div class="row g-5">
+          <div class="col-lg-3 col-md-6">
+            <h1 class="text-white mb-4">
+            Rejoignez nous sur les réseaux
+            </h1>
+            <p>
+              Peer-to-care, prend à coeur d'être proche de sa communauté, alors rejoignez-nous sur les réseaux !
+            </p>
+            <div class="d-flex pt-2">
+              <a class="btn btn-square me-1" href=""
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a class="btn btn-square me-1" href=""
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a class="btn btn-square me-1" href=""
+                ><i class="fab fa-youtube"></i
+              ></a>
+              <a class="btn btn-square me-0" href=""
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h5 class="text-light mb-4">Nous contactez</h5>
+            <p><i class="fa fa-envelope me-3"></i>info@peertocare.com</p>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h5 class="text-light mb-4">Liens rapide</h5>
+            <a class="btn btn-link" href="#home">Accueil</a>
+            <a class="btn btn-link" href="#features">Nos points forts</a>
+            <a class="btn btn-link" href="#about">A propos</a>
+            <a class="btn btn-link" href="#why">Avis</a>
+            <a class="btn btn-link" href="#pricing">Prix</a>
+            <a class="btn btn-link" href="#contact">Nous contactez</a>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h5 class="text-light mb-4">Newsletter</h5>
+            <p>Nous proposons du contenu exclusif via notre newsletter toute l'année ! Si cela vous intéresse partagez votre mail pour recevoir nos offres</p>
+            <div class="position-relative mx-auto" style="max-width: 400px">
+              <input
+                class="form-control bg-transparent w-100 py-3 ps-4 pe-5"
+              />
+              <button
+                type="button"
+                class="btn btn-secondary py-2 position-absolute top-0 end-0 mt-2 me-2"
+              >
+                Envoyer
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+              <a href="#">© Peer-to-care, All Right Reserved.</a>
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+              <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+              <a href="https://htmlcodex.com">Designed By Damien PANEK</a>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"
+      ><i class="bi bi-arrow-up"></i
+    ></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
