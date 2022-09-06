@@ -552,7 +552,7 @@ body, html {
 }
 .feature-extended-section .feature-extended-wrapper {
     padding: 70px 0;
-    background: #ffffff;
+    background: #fff7ec;
 }
 /*** Service & About 1-2 ***/
 .service-item {
@@ -819,7 +819,13 @@ body, html {
       opacity: 0;
     }
   }
+  .title-avis {
+    color: #ff6b7f;
+  }
   
+  .fa {
+    color :#ff6b7f !important;
+  }
 
 
 /*** Pricing ***/
