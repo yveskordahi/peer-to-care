@@ -827,6 +827,10 @@ body, html {
     color :#ff6b7f !important;
   }
 
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(255, 255, 255) !important;
+    opacity: 1; /* Firefox */
+  }
 
 /*** Pricing ***/
 section.pricing {
