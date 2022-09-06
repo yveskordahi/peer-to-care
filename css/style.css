@@ -232,7 +232,7 @@ body, html {
   
   @media (max-width: 991px) {
     #hero {
-      padding-top: 80px;
+      padding-top: 20px;
     }
   
     #hero .animated {
@@ -258,6 +258,24 @@ body, html {
       font-size: 18px;
       line-height: 24px;
       margin-bottom: 30px;
+    }
+    .pt-5 {
+      padding-top: 2rem !important;
+    }
+
+    #hero h1 span {
+      color: #ff6b7f;
+      border-bottom: 3px solid #c979aa;
+    }
+
+    .about-section {
+      padding-top: 30px !important;
+    }
+
+    .about-section .about-img {
+      position: relative;
+      z-index: 1;
+      padding: 40px 0;
     }
   }
   
