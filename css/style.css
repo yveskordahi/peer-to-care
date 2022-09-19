@@ -869,6 +869,7 @@ section.pricing {
   .card-pricing {
     border: solid 1px #e8e8e8;
     border-radius: 10px;
+    background-color: white;
   }
 
   .bandeau {
@@ -893,6 +894,12 @@ section.pricing {
     margin: 1.5rem 0;
   }
   
+  .bg_color_price {
+    background-color: #fff7ec !important;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
   .pricing .card-title {
     margin: 0.5rem 0;
     font-size: 0.9rem;
