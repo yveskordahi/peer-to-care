@@ -46,6 +46,20 @@
         time: 2000
     });
 
+    
+      $(function(){
+    $('#myFormSubmit').click(function(e){
+      e.preventDefault();
+      $('#formResults').text($('#myForm').serialize());
+      /*
+      $.post('http://path/to/post', 
+         $('#myForm').serialize(), 
+         function(data, status, xhr){
+           // do something here with response;
+         });
+      */
+    });
+});
 
     // Testimonials carousel
     // $(".testimonial-carousel").owlCarousel({

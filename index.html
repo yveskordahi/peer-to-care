@@ -35,17 +35,17 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
       rel="stylesheet"
     />
-
+    <link rel="stylesheet" href="css/modal.css">
     <!-- Libraries Stylesheet -->
     <!-- <link href="lib/animate/animate.min.css" rel="stylesheet" /> -->
     <!-- <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" /> -->
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet" />
-
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
-    <script src="https://kit.fontawesome.com/5d576a2555.js" crossorigin="anonymous"></script>
+    
+    <script src="https://kit.fontawesome.com/6a887ac9fa.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
@@ -108,6 +108,78 @@
       </div>
     </nav>
     <!-- Navbar End -->
+<!-- Button trigger modal -->
+<div id="open-modal" class="modal-window">
+  <div>
+    <a href="#" title="Close" class="modal-close">Close</a>
+    <h3>Contactez-nous</h3>
+    <form>
+      <div class="row g-3">
+        <div class="col-sm-6">
+          <div class="form-floating">
+            <input
+              type="text"
+              class="form-control"
+              id="gname"
+              placeholder="Gurdian Name"
+            />
+            <label for="gname">Nom</label>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="form-floating">
+            <input
+              type="email"
+              class="form-control"
+              id="gmail"
+              placeholder="Gurdian Email"
+            />
+            <label for="gmail">Email</label>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="form-floating">
+            <input
+              type="text"
+              class="form-control"
+              id="cname"
+              placeholder="Child Name"
+            />
+            <label for="cname">Téléphone</label>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="form-floating">
+            <input
+              type="text"
+              class="form-control"
+              id="cage"
+              placeholder="Child Age"
+            />
+            <label for="cage">Votre pathologie</label>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="form-floating">
+            <textarea
+              class="form-control"
+              placeholder="Leave a message here"
+              id="message"
+              style="height: 80px"
+            ></textarea>
+            <label for="message">Message</label>
+          </div>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-primary py-3 px-5" type="submit">
+            Envoyer
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+</div>
 
     <!-- Home-section Start -->
     <!-- <section id="home" class="hero-section">
@@ -186,7 +258,7 @@
               <h1><span>Une communauté</span> à votre écoute qui vous soutient au quotidien</h1>
               <h2>Peer to care vous accompagne pour trouvez vos pairs-aidants mais vous accompagne également au quotidien</h2>
               <div class="text-center text-lg-start">
-                <a href="#about" class="btn-get-started scrollto">En savoir plus</a>
+              <a href="#open-modal" class="btn-get-started scrollto">En savoir plus</a>
               </div>
             </div>
           </div>
@@ -295,7 +367,7 @@
                   sur votre pathologie et vos critères.
                 </p>
               </div>
-              <a href="" class="align-self-start btn btn-secondary py-3 px-5">Trouver mon praticien</a
+              <a href="#open-modal" class="align-self-start btn btn-secondary py-3 px-5">Trouver mon praticien</a
               >
             </div>
           </div>
@@ -318,12 +390,12 @@
                   Trouver un expert, parler à une communauté de malades c’est trouver une solution pour vous soigner, vous orienter et donc vous aider à mieux vivre la maladie. 
                 </p>
               </div>
-              <ul>
+              <!-- <ul>
                 <li>Une communauté de 50 000 malades</li>
                 <li>3 000 praticiens référencés</li>
                 <li>+1000 recommandations</li>
-              </ul>
-              <a href="" class="align-self-start btn btn-secondary py-3 px-5">Je rejoins la communauté</a>
+              </ul> -->
+              <a href="#open-modal" class="align-self-start btn btn-secondary py-3 px-5">Je rejoins la communauté</a>
             </div>
           </div>
           <div class="col-xl-6 col-lg-6 order-first order-lg-last">
@@ -370,14 +442,15 @@
             <div class="about-content">
               <div class="section-title mb-30">
                 <h2 class="mb-25 wow fadeInUp" data-wow-delay=".2s">
-                  Fini l'errance médicale avec Peer To Care
+                  Un outil dédié à voir pathologie afin de vous suivre au quotidien
                 </h2>
                 <p class="wow fadeInUp" data-wow-delay=".4s">
-                  Et si, Peer To Care vous permettait de venir à la rencontre de nos professionnelles de santé. Gagnez du temps grâce à notre fonctionnalité de recherche basée 
-                  sur votre pathologie et vos critères.
+                  Découvrez notre outil de monitoring pour suivre au mieux votre maladie, vous permettant notez les moments de crises,
+                  de prise de traitement 
+                  avec une interface personnalisé selon la pathologie et pouvoir partager son résumé à son médecin.
                 </p>
               </div>
-              <a href="" class="align-self-start btn btn-secondary py-3 px-5">Trouver mon praticien</a
+              <a href="" class="align-self-start btn btn-secondary py-3 px-5">En savoir plus</a
               >
             </div>
           </div>
@@ -603,14 +676,19 @@
             
             <div class="card-pricing mb-5 mb-lg-0">
               <div class="card-body">
-                <h5 class="card-title text-muted text-uppercase text-center">Gratuit</h5>
+                <h5 class="card-title text-uppercase text-center">Gratuit</h5>
                 <h6 class="card-price text-center">€0<span class="period">/an</span></h6>
                 <hr>
                 <ul class="fa-ul">
-                  <li><span class="fa-li"><i class="fas fa-check"></i>
-                  <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Accés à l'outil de monitoring "Travis"</li>
+                  
+                  <li  class="text-muted"><span class="fa-li"><i class="fa fa-star"></i></i></span>Mise en relation avec un Expert</li>
+                  <li  class="text-muted"><span class="fa-li"><i class="fas fa-check"></i></span>Accédez aux conseils d’autres patients</li>
+                  <!-- <li><span class="fa-li"><i class="fas fa-check"></i></span>Accés aux spécialistes qui vous correspondent</li> -->
+                  <li  class="text-muted"><span class="fa-li"><i class="fas fa-check"></i></span>Télécharger ses résultats</li>
+                  <li><span class="fa-li"><i class="fas fa-times"></i></span>Accés à l'outil de monitoring </li>
                   <!-- <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Accés aux spécialistes qui vous correspondent</li> -->
-                  <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Accés à la communauté</li>
+                  <li><span class="fa-li"><i class="fas fa-times"></i></span>Accés à la communauté</li>
+                  
                   <!-- <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Unlimited
                     Private Projects</li>
                   <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Dedicated
@@ -631,15 +709,18 @@
             <div class="bandeau">30 jours d'éssais gratuit</div>
             <div class="card-pricing mb-5 mb-lg-0">
               <div class="card-body">
-                <h5 class="card-title text-muted text-uppercase text-center">Plus</h5>
-                <h6 class="card-price text-center">€19.99<span class="period">/an</span></h6>
+                <h5 class="card-title text-uppercase text-center">Plus</h5>
+                <h6 class="card-price text-center">€29.99<span class="period">/an</span></h6>
                 <hr>
                 <ul class="fa-ul">
                   <li><span class="fa-li"><i class="fas fa-check"></i></span>Mise en relation avec un Expert</li>
                   <li><span class="fa-li"><i class="fas fa-check"></i></span>Accédez aux conseils d’autres patients</li>
                   <!-- <li><span class="fa-li"><i class="fas fa-check"></i></span>Accés aux spécialistes qui vous correspondent</li> -->
+                  
+                  <li><span class="fa-li"><i class="fas fa-check"></i></span>Télécharger ses résultats</li>
+                  <li><span class="fa-li"><i class="fas fa-check"></i></span>Accés à l'outil de monitoring </li>
                   <li><span class="fa-li"><i class="fas fa-check"></i></span>Accés à la communauté</li>
-                  <li><span class="fa-li"><i class="fas fa-check"></i></span>Accés à l'outil de monitoring "Travis"</li>
+                  
                   <!-- <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Private Projects</li>
                   <li><span class="fa-li"><i class="fas fa-check"></i></span>Dedicated Phone Support</li>
                   <li><span class="fa-li"><i class="fas fa-check"></i></span>Free Subdomain</li> -->
@@ -677,7 +758,7 @@
                 </div>
               </div>
             </div>
-          </div> -->
+          </div> 
         </div>
       </div>
     </section> 
@@ -858,6 +939,8 @@
     <script src="lib/counterup/counterup.min.js"></script>
 
     <!-- Template Javascript -->
+
+    </script>
     <script src="js/main.js"></script>
   </body>
 </html>
